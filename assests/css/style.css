@@ -19,6 +19,16 @@
     --text-font-size: 16px;
     --btn-text-size: 12px;
 }
+
+@font-face {
+    font-family: Gotham;
+    src: url("../fonts/Gotham/Gotham-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gotham-O;
+    src: url("../fonts/Gotham/GothamOffice-Regular.otf") format("opentype");
+}
 /* 
 ==============================================================================================================
                                             LOADING PAGE
@@ -39,6 +49,77 @@
     font-size: 8.5px;
 
 }
-p{
-    font-size: 12px;
+
+.loading {
+    font-size: var(--h1-font-size);
+    font-family: Gotham;
+    color: var(--white-color);
+    display: flex;
+}
+
+.letter {
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+    display: inline-block;
+}
+
+.letter:nth-child(1) { animation-delay: 0.1s; }
+.letter:nth-child(2) { animation-delay: 0.3s; }
+.letter:nth-child(3) { animation-delay: 0.5s; }
+.letter:nth-child(4) { animation-delay: 0.7s; }
+.letter:nth-child(5) { animation-delay: 0.9s; }
+.letter:nth-child(6) { animation-delay: 1.1s; }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
+
+/* 
+==============================================================================================================
+                                            PAGE DE CONNECTION
+==============================================================================================================
+*/
+.body-login-box{
+    font-family: Gotham-O;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box h2{
+    color: var(--red-color);
+    font-size: var(--h2-font-size);
+}
+
+.login-box p{
+    color: var(--black-color);
+    font-size: var(--text-font-size);
+}
+
+.input-group {
+    display: flex;
+}
+
+select {
+    width: 16%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--grey-color);
+    appearance: none;
+}
+
+input {
+    width: 55%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--gray-color);
+    border-radius: 5px;
+    background-color: var(--grey-color);
 }
