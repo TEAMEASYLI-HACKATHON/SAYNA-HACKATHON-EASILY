@@ -20,3 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
                                             PAGE DE CONNECTION
 ==============================================================================================================
 */
+function validatePhoneNumber() {
+    var phoneNumber = document.getElementById("phoneNumber").value;
+    if (phoneNumber === "") {
+        alert("Veuillez entrer votre numéro de téléphone.");
+    } else {
+        window.location.href = "/pages/conf.html"; // Redirige vers la page de confirmation
+    }
+}

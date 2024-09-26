@@ -21,10 +21,12 @@
                     <option value="+44">+44</option>
                     <!-- Ajoute d'autres options ici -->
                 </select>
-                <input type="text" class="phone-number" placeholder="07 00 00 00 00">
+                <input type="tel" class="phone-number" id="phoneNumber" placeholder="07 00 00 00 00" pattern="^[0-9]\d{9}$">
             </section>
-            <button class="btn">Continuer</button>
+            <button class="btn" onclick="validatePhoneNumber()">Continuer</button>
         </article>
     </main>
+
+    <script src="../assests/js/script.js"></script>
 </body>
 </html>
