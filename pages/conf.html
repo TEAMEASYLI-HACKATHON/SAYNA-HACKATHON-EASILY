@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assests/css/style.css">
     <title>Page de confirmation</title>
 </head>
-<body>
-    <h1>Confimartion</h1>
+<body class="body-conf">
+    <main class="container-conf">
+        <article class="header-conf">
+            <button class="back-button"><a href="../pages/conn.html"><</a></button>
+            <h2>Confirmez votre numéro</h2>
+        </article>
+
+        <article class="form">
+            <p>Entrez le code que nous vous avons envoyé</p>
+            <section class="code-inputs">
+                <input type="number" maxlength="1" />
+                <input type="number" maxlength="1" />
+                <input type="number" maxlength="1" />
+                <input type="number" maxlength="1" />
+            </section>
+            <p class="resend-timer">Renvoyez le code dans : 30 secondes</p>
+            <button class="continue-button">continuer</button>
+        </article>
+        
+        <article class="numpad">
+            <section class="row">
+                <button>1</button>
+                <button>2<br><span>ABC</span></button>
+                <button>3<br><span>DEF</span></button>
+            </section>
+            <section class="row">
+                <button>4<br><span>GHI</span></button>
+                <button>5<br><span>JKL</span></button>
+                <button>6<br><span>MNO</span></button>
+            </section>
+            <section class="row">
+                <button>7<br><span>PQRS</span></button>
+                <button>8<br><span>TUV</span></button>
+                <button>9<br><span>WXYZ</span></button>
+            </section>
+            <section class="row">
+                <button>*</button>
+                <button>0</button>
+                <button>#</button>
+            </section>
+        </article>
+    </main>
+
+    <script src="../assests/js/script.js"></script>
 </body>
 </html>
